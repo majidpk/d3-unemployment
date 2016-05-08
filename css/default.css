@@ -1,0 +1,120 @@
+div {
+			border-style: solid;
+			border-width: 2px;
+		}
+		#main {
+			float: left;
+			width: 800;
+		}
+		
+		#ostan {
+			width: auto;
+			height: 400;
+			background-color: white;
+		}
+		
+		#Linechart {
+			float: bottom;
+			width: auto;
+			height: 400;
+			background-color: white;
+		}
+		#aside {
+			width: 400;
+			float: left;
+		}
+		
+		
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: #000;
+		  shape-rendering: crispEdges;
+		}
+
+		.x.axis path {
+		  display: none;
+		}
+
+		.line {
+		  fill: none;
+		  stroke: steelblue;
+		  stroke-width: 1.5px;
+		}
+		.province { 
+			fill: rgb(255, 0,0);
+			stroke: #fff;
+			stroke-linejoin: round;
+		}
+		
+		
+		path {
+		  stroke-width: 1px;
+		  stroke: white;
+		  fill: #999;
+		  cursor: pointer;
+		}
+		
+		path:hover {
+			fill: rgb(255, 0, 0);
+			!important
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		.q0-11 {
+		  fill: #40004b;
+		}
+
+		.q1-11 {
+		  fill: #762a83;
+		}
+
+		.q2-11 {
+		  fill: #9970ab;
+		}
+
+		.q3-11 {
+		  fill: #c2a5cf;
+		}
+
+		.q4-11 {
+		  fill: #e7d4e8;
+		}
+
+		.q5-11 {
+		  fill: #f7f7f7;
+		}
+
+		.q6-11 {
+		  fill: #d9f0d3;
+		}
+
+		.q7-11 {
+		  fill: #a6dba0;
+		}
+
+		.q8-11 {
+		  fill: #5aae61;
+		}
+
+		.q9-11 {
+		  fill: #1b7837;
+		}
+
+		.q10-11 {
+		  fill: #00441b;
+		}
+		
+		div.tooltip {
+			color: #222;
+			background-color: #fff;
+			padding: .5em;
+			text-shadow: #f5f5f5 0 1px 0;
+			border-radius: 2px;
+			opacity: 0.9;
+			position: absolute;
+			!important
+		}

@@ -1,0 +1,297 @@
+@charset "utf-8 ";
+@import url(fonts/weblogma_yekan.css);
+@charset "UTF-8 ";
+
+* {
+	font-family: B Mitra;
+	//font-family: weblogmayekan;
+	//border-width: 1px;
+	//border-color: Red;
+}
+
+body {
+    font-family:weblogmayekan,Arial;
+    margin:0;
+    padding: 10px 10px;
+    background: #EEE;
+    //direction: rtl;
+}
+
+header {
+	//display: inline-block;
+	height: auto;
+}
+
+div.valueGroup
+{
+	float: right;
+	text-align: right;
+	margin-top: 0;
+	margin-right: 30px;
+	width: auto;
+	padding: 5 5 5 5;
+	border: YellowGreen solid 1px;
+	background-color: whitesmoke;
+	border-radius: 4px;
+	//padding-right: 500;
+	//text-align: left;
+	//float: right;
+	//display: inline-block;
+}
+
+div.timeSlider
+{
+	//background-color: #f5f5f5;
+	//float: left;
+	display: inline-block;
+	width: 220px;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 4px;
+	border-style: solid;
+	padding: 5 5 5 5;
+	text-align: left;
+	margin-left: 30px;
+}
+
+#loctype{
+	display: block;
+	margin-top: 30px;
+}
+
+label 
+{
+	vertical-align: top;
+}
+
+input.button {
+	font-size: 14;
+	font-family:weblogmayekan;
+	direction: rtl;
+	width: auto;
+	height: 30;
+	display:inline-block;
+}
+
+
+.bar {
+  fill: steelblue;
+  stroke:black;
+  stroke-width: 1px;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.x path.province,
+.axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+   display: none;
+}
+
+td {
+	position: relative;
+}
+#main {
+	display: inline-block;
+	position: absolute;
+	vertical-align: top;
+	width: 50%;
+	height: 100%;
+	top:0;
+	border-style: solid;
+	border-width: 0px;
+	margin-top: 70px;
+	max-width: 800px;
+}
+
+#ostan {
+	width: auto;
+	height: 400;
+	background-color: white;
+	float:top;
+}
+
+#lineChart {
+	display: inline-block;
+	position: absolute;
+	right: 30;
+	width: 600;
+	height: 600;
+	//background-color: white;
+	margin-top: 100px;
+	//vertical-align: top;
+}
+#aside {
+	height: 800;
+	width: 40%;
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/*#barChart1
+{
+	height: 400;
+	width: 200;
+	margin-top: 400;
+	float: right;
+	background-color: white;
+	border-width: 1px;
+	border-style: solid;
+	display: inline-block;
+}
+
+#barChart2
+{
+	height: 400;
+	width: 200;
+	margin-top: 400;
+	float: left;
+	background-color: white;
+	border-radius: 1px;
+	border-style: solid;
+}*/
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.province { 
+	fill: rgb(255, 0,0);
+	stroke: 0;
+	stroke-linejoin: round;
+}
+
+
+path {
+  stroke-width: 1px;
+  stroke: white;
+  //fill: #999;
+  cursor: pointer;
+
+}
+path.selected{
+		stroke: green;
+		stroke-width: 3px;
+		background:url(
+		data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=
+    ) repeat;
+	!important
+}
+
+rect.selected {
+	stroke: green;
+	stroke-width: 3px;
+}
+
+path.province:hover {
+	fill: rgb(255, 0, 0);
+	!important
+}
+
+.hidden {
+	display: none;
+}
+
+div.tooltip {
+	color: #222;
+	background-color: #fff;
+	padding: .5em;
+	text-shadow: #f5f5f5 0 1px 0;
+	border-radius: 2px;
+	opacity: 0.8;
+	direction: rtl;
+	text-align: right;
+	position: absolute;
+	width: auto;
+	text-align: center;
+	!important
+}
+
+p {
+	font-family: Tahoma;
+	font-size: 10;
+}
+
+.legend
+{
+	position: absolute;
+}
+
+.tick
+{
+	
+}
+
+.barTitle
+{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	font-family: B Mitra;
+	font-size: 14;
+	font-style: Bold;
+}
+
+li {
+	margin-left: 0;
+	padding-right: 10;
+	padding-left: 10;
+	text-align: right;
+	list-style-type: none;
+}
+
+input.button {
+	//display: block;
+	margin-top: 3px;
+	width: 80px;
+	text-align: center;
+}
+
+div.projectTitle
+{
+	position: absolute;
+	top: 5;
+	height: 50;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+div.projectTitle p
+{
+	font-family: B Mitra;
+	font-size: 24;
+}
+
+rect.timebar
+{
+	fill: Black;
+	opacity: 0.05;
+}
