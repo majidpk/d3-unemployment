@@ -4,9 +4,6 @@
 
 * {
 	font-family: B Mitra;
-	//font-family: weblogmayekan;
-	//border-width: 1px;
-	//border-color: Red;
 }
 
 body {
@@ -46,7 +43,7 @@ div.timeSlider
 	display: inline-block;
 	width: 220px;
 	border-color: black;
-	border-width: 1px;
+	border-width: 0px;
 	border-radius: 4px;
 	border-style: solid;
 	padding: 5 5 5 5;
@@ -54,9 +51,14 @@ div.timeSlider
 	margin-left: 30px;
 }
 
+div#timeSliderText 
+{
+	text-align: center;
+}
+
 #loctype{
 	display: block;
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 label 
@@ -85,7 +87,7 @@ input.button {
 }
 
 .axis {
-  font: 10px sans-serif;
+  font-size: 12
 }
 
 .x path.province,
@@ -108,12 +110,12 @@ td {
 	position: absolute;
 	vertical-align: top;
 	width: 50%;
-	height: 100%;
+	//height: 100%;
 	top:0;
 	border-style: solid;
 	border-width: 0px;
 	margin-top: 70px;
-	max-width: 800px;
+	min-width: 800px;
 }
 
 #ostan {
@@ -130,7 +132,7 @@ td {
 	width: 600;
 	height: 600;
 	//background-color: white;
-	margin-top: 100px;
+	margin-top: 20px;
 	//vertical-align: top;
 }
 #aside {
@@ -140,32 +142,6 @@ td {
 	display: inline-block;
 	vertical-align: top;
 }
-
-
-/*#barChart1
-{
-	height: 400;
-	width: 200;
-	margin-top: 400;
-	float: right;
-	background-color: white;
-	border-width: 1px;
-	border-style: solid;
-	display: inline-block;
-}
-
-#barChart2
-{
-	height: 400;
-	width: 200;
-	margin-top: 400;
-	float: left;
-	background-color: white;
-	border-radius: 1px;
-	border-style: solid;
-}*/
-
-
 
 .axis path,
 .axis line {
@@ -200,9 +176,14 @@ path {
 path.selected{
 		stroke: green;
 		stroke-width: 3px;
-		background:url(
-		data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=
-    ) repeat;
+		//background-image:url('data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=');
+		//background-image: url(#diagonal-stripe-1)
+		//background-size: 100% 100%;
+		border-color: magenta;
+		border-width: 4px;
+		border: solid;
+		mask: url(#mask);
+		mask-border-width: 50px;	
 	!important
 }
 
@@ -294,4 +275,29 @@ rect.timebar
 {
 	fill: Black;
 	opacity: 0.05;
+}
+
+path.line
+{
+	stroke-width: 2px;
+}
+
+path.line:hover 
+{
+	stroke-width: 4px;
+}
+
+g.stripe path
+{
+	mask: url(#mask);
+}
+
+.striped
+{
+	mask: url(#mask);
+}
+
+.blue.striped
+{
+	//fill: blue;
 }
